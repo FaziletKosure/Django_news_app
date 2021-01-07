@@ -1,11 +1,14 @@
 from django.shortcuts import render
 # from newsapi.newsapi_client import NewsApiClient
 from newsapi import NewsApiClient
+from decouple import config
 # Create your views here.
 
 
 def index(request):
-    newsApi = NewsApiClient(api_key='aa6faeccad2842839353d4b050bb5768')
+    API_KEY = config("API_KEY")
+
+    newsApi = NewsApiClient(api_key=API_KEY)
     headLines = newsApi.get_top_headlines(sources='ign, cnn')
     articles = headLines['articles']
     desc = []
