@@ -42,10 +42,10 @@
   <div class="card  mb-3 img">
     <img src="{{ img }}" alt="image" style="border-radius:5px ;">
   </div>
-  <div class="card  mb-3">
-    <h4><span class="badge badge-primary">Headline:</span></h4>
+  <div class="card  mb-3" style="height: 400px;padding: 20px;">
+    <h4 style="margin-top: 20px;"><span class="badge badge-primary">Headline:</span></h4>
     <h5>{{ hl }}{{ value|linebreaks }}</h5>
-    <h4> <span class="badge badge-success">Description:</span></h4>
+    <h4 style="margin-top: 20px;"> <span class="badge badge-success">Description:</span></h4>
     <h5>{{ des }}{{ value|linebreaks }}</h5>
   </div>
   {% endfor %}
