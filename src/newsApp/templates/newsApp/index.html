@@ -40,9 +40,9 @@
   {% for hl, des, img in mylist %}
 
   <div class="card  mb-3 img">
-    <img src="{{ img }}" alt="image" style="border-radius:5px ;">
+    <img src="{{ img }}" alt="image" style="border-radius:5px;height: 500px;">
   </div>
-  <div class="card  mb-3" style="height: 400px;padding: 20px;">
+  <div class="card  mb-3" style="height: 350px;padding: 20px;">
     <h4 style="margin-top: 20px;"><span class="badge badge-primary">Headline:</span></h4>
     <h5>{{ hl }}{{ value|linebreaks }}</h5>
     <h4 style="margin-top: 20px;"> <span class="badge badge-success">Description:</span></h4>
